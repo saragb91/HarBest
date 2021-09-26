@@ -1,0 +1,16 @@
+.common-button {
+  border: 1px green solid;
+  background-color: white;
+  color: green;
+  text-decoration: none;
+  transition: all 1.5s;
+}
+
+.main-button {
+  padding: 2% 6%;
+  font-size: 16px;
+}
+.common-button:hover {
+  background-color: green;
+  color: white;
+}
