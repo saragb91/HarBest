@@ -40,7 +40,7 @@ const useProductList = () => {
   }, []);
 
   const handleAddProduct = useCallback(() => {
-    setForm({});
+    setForm({ product: "", status: "activo" });
     setShowModal(true);
   }, []);
 

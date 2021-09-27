@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Main.css";
 
 const Main = () => {
@@ -13,9 +14,9 @@ const Main = () => {
           recolectado hace menos de 24h por agricultores con nombres y
           apellidos.
         </p>
-        <a className="common-button main-button" href="/list">
+        <Link className="common-button main-button" to="/products">
           Empezar
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import ModalForm from "./ModalForm";
 import Pagination from "./Pagination";
 import "./ProductsContainer.css";
 import "../Common.css";
+import { Link } from "react-router-dom";
 
 const ProductsContainer = () => {
   const {
@@ -29,9 +30,9 @@ const ProductsContainer = () => {
 
   return (
     <div className="container-list">
-      <a className="back-link" href="/">
+      <Link className="back-link" to="/">
         Volver
-      </a>
+      </Link>
       {showModal && (
         <ModalForm
           form={form}
