@@ -8,7 +8,5 @@ export const updateProducts = (id, data) => productsService.put(`/${id}`, data);
 
 export const removeProducts = (id) => productsService.delete(`/${id}`);
 export const fetchProductByPage = (pageNumber) => {
-  return fetch(
-    `${process.env.REACT_APP_URL}/products/filteredProductList?page=${pageNumber}`
-  );
+  return fetch(`${process.env.REACT_APP_URL}/products/?page=${pageNumber}`);
 };
