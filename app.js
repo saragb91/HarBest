@@ -9,7 +9,7 @@ require("./configs/middleware.config")(app);
 require("./configs/session.config")(app);
 
 //ROUTES
-app.use("/api/list", require("./routes/productList.routes"));
+app.use("/products", require("./routes/productList.routes"));
 
 app.use((req, res) => {
   res.sendFile(__dirname + "/public/index.html");
